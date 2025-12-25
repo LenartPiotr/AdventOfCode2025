@@ -8,7 +8,7 @@ OUT_DIR := out
 LIB_SOURCES := $(wildcard $(SRC_DIR)/*.cpp)
 LIB_OBJECTS := $(patsubst $(SRC_DIR)/%.cpp, $(OUT_DIR)/%.o, $(LIB_SOURCES))
 
-DAYS    := 2 3 4 5 6 7
+DAYS    := 2 3 4 5 6 7 8
 TARGETS := $(patsubst %, $(OUT_DIR)/day%.exe, $(DAYS))
 
 all: $(TARGETS)
