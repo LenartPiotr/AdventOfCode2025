@@ -157,7 +157,5 @@ int main() {
         break;
     }
 
-    // 4618378450 too high
-
     return 0;
 }
