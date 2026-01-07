@@ -7,6 +7,7 @@
 #include <sstream>
 #include <set>
 #include <map>
+#include <queue>
 
 #define bint long long int
 
@@ -42,3 +43,12 @@ public:
     inline const int& width() { return w; }
     inline const int& height() { return h; }
 };
+
+template<typename T>
+ostream& operator<< (ostream& os, vector<T>& v) {
+    os << "vector<>\n";
+    for (size_t i = 0; i < v.size(); i++) {
+        os << i << ": " << v[i] << endl;
+    }
+    return os;
+}
